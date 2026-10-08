@@ -1,27 +1,3 @@
-<?php
-session_start();
-require_once 'db.php';
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $fullname         = $_POST['fullname'] ?? '';
-    $email            = $_POST['email'] ?? '';
-    $phone            = $_POST['phone'] ?? '';
-    $password         = $_POST['password'] ?? '';
-    $confirm_password = $_POST['confirm_password'] ?? '';
-    $address          = $_POST['address'] ?? '';
-
-    if ($password === $confirm_password) {
-        $stmt = $conn->prepare("INSERT INTO users (fullname, email, phone, password, address) VALUES (?, ?, ?, ?, ?)");
-        $stmt->bind_param("sssss", $fullname, $email, $phone, $password, $address);
-
-        if ($stmt->execute()) {
-            $_SESSION['user_id'] = $stmt->insert_id;
-            header("Location: order.php");
-            exit();
-        }
-    }
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
