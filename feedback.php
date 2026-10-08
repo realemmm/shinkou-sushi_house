@@ -13,7 +13,7 @@
   <header class="site-header">
     <div class="nav-shell section-shell">
       <a class="brand" href="index.php" aria-label="Shinkou Sushi-House Home">
-        <img class="brand-mark" src="logo.jpg" alt="Shinkou Sushi-House logo">
+        <img class="brand-mark" src="images/logo.jpg" alt="Shinkou Sushi-House logo">
         <span class="brand-copy">
           <strong>Shinkou Sushi-House</strong>
           <small>est. 2017</small>
@@ -25,70 +25,71 @@
         <a href="about.php">About Us</a>
         <a href="menu.php">Menu</a>
         <a href="order.php">Checkout</a>
+        <a class="is-active" href="feedback.php">Feedback</a>
         <a href="registration.php">Register</a>
         <a href="cart.php">Cart</a>
-        <a class="is-active" href="feedback.php">Feedback</a>
       </nav>
     </div>
   </header>
 
   <main class="page-main">
-    <section class="page-banner page-banner-dark feedback-banner">
+    <section class="page-banner feedback-banner">
       <div class="section-shell">
         <p class="section-tag">Feedback</p>
         <h1>Real reactions from diners who care about speed and freshness.</h1>
-        <p>
-          Guest responses focus on the same things the brand promises: quick flow,
-          bright food, and a cleaner, more confident dining experience.
-        </p>
+        <p>Guest responses focus on the same things the brand promises: quick flow, bright food, and a cleaner, more confident dining experience.</p>
       </div>
     </section>
 
     <section class="feedback-section page-section-trim">
       <div class="section-shell">
-        <div class="section-heading section-heading-light">
+        <div class="section-heading">
           <p class="section-tag">Guest Reactions</p>
           <h2>Read the sentiment first, then leave your own direct note.</h2>
         </div>
 
-        <div class="feedback-layout">
-          <div class="testimonial-grid">
-            <article class="testimonial-card">
-              <div class="stars stars-five" aria-label="5 out of 5 stars"></div>
-              <p>
-                "Masarap ang sushi nila. Legit ang wasabi. And masarap din ang mga ramen! 
-                 Mas masarap pa sa mga nasa malls. Favorite Ramen and Sushi house na namin ito"
-              </p>
-              <strong>Leahren Sucaldito Madia | September 30, 2019</strong>
-            </article>
+        <div class="feedback-grid">
+          <div class="feedback-list">
+            <div class="feedback-card">
+              <div class="stars">★★★★★</div>
+              <p>"Masarap ang sushi nila. Legit ang wasabi. And masarap din ang mga ramen! Mas masarap pa sa mga nasa malls. Favorite Ramen and Sushi house na namin ito"</p>
 
-            <article class="testimonial-card">
-              <div class="stars stars-five" aria-label="5 out of 5 stars"></div>
-              <p>
-                "andami ko ng order, and they never failed to always serve me good. #morepower 
-                #goforgold #goodcustomerservice #goosfood #rapsa"
-              </p>
-              <strong>Ed Dizon | December 8. 2018</strong>
-            </article>
-
-            <article class="testimonial-card">
-              <div class="stars stars-four" aria-label="4 out of 5 stars"></div>
-              <p>
-                "sulit na sulit. sarap pa ng foods.
-                  pati si roman mutuc"
-              </p>
-              <strong>Erica Magtibay Valonda | October 26, 2018</strong>
-            </article>
-          </div>
-
-          <form class="comment-card">
-            <div class="card-heading">
-              <p class="panel-label">Leave a Comment</p>
-              <h3>Tell us about your experience</h3>
+              <div class="author-info">
+                <strong>LEAHREN SUCALDITO MADIA</strong>
+                <small>September 30, 2019</small>
+              </div>
             </div>
 
-            <textarea rows="8" placeholder="Share your Shinkou experience, your favorite dish, or a suggestion for the next visit."></textarea>
-            <button class="button button-primary" type="button">Submit Feedback</button>
+            <div class="feedback-card">
+              <div class="stars">★★★★★</div>
+              <p>"andami ko ng order, and they never failed to always serve me good. #morepower #goforgold #goodcustomerservice #goosfood #rapsa"</p>
+
+              <div class="author-info">
+                <strong>ED DIZON</strong>
+                <small>December 8, 2018</small>
+              </div>
+            </div>
+
+            <div class="feedback-card">
+              <div class="stars">★★★★★</div>
+              <p>"sulit na sulit. sarap pa ng foods. pati si roman mutuc"</p>
+
+              <div class="author-info">
+                <strong>ERICA MAGTIBAY VALONDA</strong>
+                <small>October 28, 2018</small>
+              </div>
+            </div>
+          </div>
+
+          <form class="feedback-form-card" action="feedback.php" method="POST">
+            <div class="card-heading">
+              <p class="panel-label">Leave a Comment</p>
+              <h3>Tell Us About Your Experience</h3>
+            </div>
+
+            <textarea name="comment" rows="8" placeholder="Share your Shinkou experience, your favorite dish, or a suggestion for the next visit." required></textarea>
+
+            <button type="submit" class="button button-primary button-block">Submit Feedback</button>
           </form>
         </div>
       </div>
@@ -98,13 +99,13 @@
   <footer class="page-footer">
     <div class="section-shell footer-shell">
       <div class="footer-brand">
-        <img class="footer-logo" src="logo.jpg" alt="Shinkou Sushi-House logo">
+        <img class="footer-logo" src="images/logo.jpg" alt="Shinkou Sushi-House logo">
         <div>
           <strong>Shinkou Sushi-House</strong>
           <p>Taste the Tradition</p>
         </div>
       </div>
-      <p>BLK 6, LOT 6&8, St. Emmanuel Homes, Prenza II, Marilao, Bulacan | shinkousushihouse@gmail.com  |  09255310227</p>
+      <p>BLK 6, LOT 6&8, St. Emmanuel Homes, Prenza II, Marilao, Bulacan | shinkousushihouse@gmail.com | 09255310227</p>
     </div>
   </footer>
 </body>
