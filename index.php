@@ -1,7 +1,3 @@
-<?php
-session_start();
-$order_link = isset($_SESSION['user_id']) ? 'order.php' : 'registration.php';
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
