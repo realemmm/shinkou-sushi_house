@@ -1,3 +1,7 @@
+<?php
+session_start();
+$order_link = isset($_SESSION['user_id']) ? 'order.php' : 'registration.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,7 +48,7 @@
         </p>
 
         <div class="hero-actions">
-          <a class="button button-primary" href="order.php">Order Now</a>
+          <a class="button button-primary" href="<?php echo $order_link; ?>">Order Now</a>
           <a class="button button-secondary" href="menu.php">View Menu</a>
         </div>
 
