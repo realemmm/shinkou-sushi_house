@@ -13,7 +13,7 @@
   <header class="site-header">
     <div class="nav-shell section-shell">
       <a class="brand" href="index.php" aria-label="Shinkou Sushi-House Home">
-        <img class="brand-mark" src="images/logo.jpg" alt="Shinkou Sushi-House logo">
+        <img class="brand-mark" src="logo.jpg" alt="Shinkou Sushi-House logo">
         <span class="brand-copy">
           <strong>Shinkou Sushi-House</strong>
           <small>est. 2017</small>
@@ -115,7 +115,7 @@
   <footer class="page-footer">
     <div class="section-shell footer-shell">
       <div class="footer-brand">
-        <img class="footer-logo" src="images/logo.jpg" alt="Shinkou Sushi-House logo">
+        <img class="footer-logo" src="logo.jpg" alt="Shinkou Sushi-House logo">
         <div>
           <strong>Shinkou Sushi-House</strong>
           <p>Taste the Tradition</p>
