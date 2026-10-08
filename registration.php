@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <a href="order.php">Checkout</a>
         <a href="feedback.php">Feedback</a>
         <a href="cart.php">Cart</a>
-        <a class="is-active" href="register.php">Register</a>
+        <a class="is-active" href="registration.php">Register</a>
       </nav>
     </div>
   </header>
@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
 
         <div class="order-layout">
-          <form class="order-card registration-card" action="register_process.php" method="POST">
+          <form class="order-card registration-card" action="registration.php" method="POST">
             <div class="card-heading">
               <p class="panel-label">User Account</p>
               <h3>Registration Details</h3>
@@ -100,9 +100,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <textarea id="address" name="address" rows="4" placeholder="House/Bldg No., Street, Barangay, City, Bulacan"></textarea>
 
             <label class="checkbox-row" for="terms">
-  <input id="terms" name="terms" type="checkbox" required>
-  <span>I agree to the <a href="terms.html" target="_blank" style="color: inherit; text-decoration: underline;">Terms and Conditions</a>.</span>
-</label>
+              <input id="terms" name="terms" type="checkbox" required>
+              <span>I agree to the <a href="terms.php" target="_blank" style="color: inherit; text-decoration: underline;">Terms and Conditions</a>.</span>
+            </label>
 
             <button type="submit" class="button button-primary">
               Create Account
